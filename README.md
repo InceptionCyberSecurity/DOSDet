@@ -1,5 +1,5 @@
 # DOSDet
- Quick DOS detection for Linux Server
+ Quick DOS detection for Linux Server.
 
 # License
 MIT License

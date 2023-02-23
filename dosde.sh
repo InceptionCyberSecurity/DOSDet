@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Install tools
+sudo apt update
 sudo apt-get install net-tools nload -y
 
 # Check server load. If number is high, investigate.

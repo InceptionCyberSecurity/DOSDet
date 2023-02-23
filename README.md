@@ -1,5 +1,5 @@
 # DOSDet
- Quick DOS detection for Linux Server. This is a snapshot so will be indicative and aid your Incident Response.
+ Quick DOS detection for Linux Server. Makes a snapshot so the Report will be indicative, and so aid your early Incident Response.
 
 # TODO
 Send Report to user defined email

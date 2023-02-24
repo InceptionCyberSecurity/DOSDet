@@ -21,7 +21,7 @@ Now kill all httpd connections and restart httpd services
 Repeat for all malicious IPs.
 
 # TODO
-Send Report to user defined email
+.txt file Report as HTML
 
 # License
 MIT License

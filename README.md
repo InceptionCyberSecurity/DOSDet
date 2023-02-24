@@ -5,18 +5,18 @@
 From dosde.sh, identify the IPs attacking you. Block using <br/>
 
 **route add "ipaddress" reject** <br/>
-**route -n |grep "ipaddress"  to check if blocked**<br/>
+**route -n |grep "ipaddress"  to check if blocked** <br/>
 
 Also you can block an IP address using iptables
 
-iptables -A INPUT 1 -s IPADDRESS -j DROP/REJECT
-service iptables restart
-service iptables save
+**iptables -A INPUT 1 -s IPADDRESS -j DROP/REJECT** <br/>
+**service iptables restart** <br/>
+**service iptables save** <br/>
 
 Now kill all httpd connections and restart httpd services
 
-killall -KILL httpd
-service httpd startssl
+**killall -KILL httpd** <br/>
+**service httpd startssl** <br/>
 
 Repeat for all malicious IPs.
 

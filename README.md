@@ -4,8 +4,8 @@
 # Mitigate a DOS attack
 From dosde.sh, identify the IPs attacking you. Block using
 
-** route add "ipaddress" reject **
-** route -n |grep "ipaddress"  to check if blocked **
+**route add "ipaddress" reject**
+**route -n |grep "ipaddress"  to check if blocked**
 
 Also you can block an IP address using iptables
 

@@ -2,10 +2,10 @@
  Quick DOS detection for Linux Server. Makes a snapshot so the Report will be indicative, and so aid your early Incident Response.
 
 # Mitigate a DOS attack
-From dosde.sh, identify the IPs attacking you. Block using
+From dosde.sh, identify the IPs attacking you. Block using <br/>
 
-**route add "ipaddress" reject**
-**route -n |grep "ipaddress"  to check if blocked**
+**route add "ipaddress" reject** <br/>
+**route -n |grep "ipaddress"  to check if blocked**<br/>
 
 Also you can block an IP address using iptables
 

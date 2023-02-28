@@ -22,7 +22,7 @@ sed -i -e '1iConnected IPs\' netst.txt
 # process txt files
 cat load.txt nload.txt netst.txt | sort > dos.txt
 sed -i -e '1iIs a DOS attack Occuring Right Now?\' dos.txt
-sed -i -e '1i******************************************************************\' dos.txt
+sed -i -e '1i************************************\' dos.txt
 
 # mail
 mail -s "Malware Report" $umail -a dos.txt

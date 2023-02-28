@@ -1,13 +1,8 @@
 #!/bin/bash
 
-# Install tools
-sudo apt update
-sudo apt-get install net-tools nload mailutils ssmtp epel-release -y
-# nano /etc/ssmtp/ssmtp.conf
-# change email addresses to your Gmail account
-
 echo " "
 echo " Make sure you have setup your outgoing SMTP mail server as per the instructions on screen. "
+echo " install.sh will install and setup a SMTP server on this local machine. "
 echo " You need to specify your Gmail credentials to allow SMTP traffic."
 echo " "
 read -p " What email do you want the results to be sent to ? " umail
@@ -26,7 +21,7 @@ sed -i -e '1iConnected IPs\' netst.txt
 
 # process txt files
 cat load.txt nload.txt netst.txt | sort > dos.txt
-sed -i -e '1iDOS attack Occuring\' dos.txt
+sed -i -e '1iIs a DOS attack Occuring Right Now?\' dos.txt
 sed -i -e '1i******************************************************************\' dos.txt
 
 # mail

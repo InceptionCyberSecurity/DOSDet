@@ -25,6 +25,6 @@ sed -i -e '1iIs a DOS attack Occuring Right Now?\' dos.txt
 sed -i -e '1i************************************\' dos.txt
 
 # mail
-mail -s "Malware Report" $umail -a dos.txt
+mail -s "Initial and Quick Malware Report" $umail -a dos.txt
 clear
 echo " Report sent to $umail. "

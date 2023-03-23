@@ -1,11 +1,13 @@
 #!/bin/bash
+# DOS detection script
 
 echo "  "
-echo " Make sure you have setup your outgoing SMTP mail server as per the instructions on screen. "
+echo " Confirm you have setup your outgoing mail server as per the instructions during install. "
 echo " install.sh will install and setup a SMTP server on this local machine. "
-echo " You need to specify your Gmail credentials to allow SMTP traffic."
+echo " You need to specify your Gmail credentials to allow SMTP traffic, for example."
 echo " "
-echo " RUN FIRST TO GET IP ADDRESS - netstat -ntu|awk '{print $5}'|cut -d: -f1 -s|sort|uniq -c|sort -nk1 -r > netst.txt "
+echo " RUN THIS netstat command FIRST TO GET ATACKING IP ADDRESS .... "
+echo " netstat -ntu|awk '{print $5}'|cut -d: -f1 -s|sort|uniq -c|sort -nk1 -r > netst.txt "
 echo " "
 read -p " What email do you want the results to be sent to ? " umail
 read -p " What IP address would you like blocked? Enter 0.0.0.0 if no IP address known " ipban
@@ -40,5 +42,8 @@ service httpd startssl
 
 # mail
 mail -s "Initial and Quick Malware Report" $umail -a dos.txt
-clear
 echo " Report sent to $umail. "
+echo " "
+echo " Look at dos.txt carefully and identify the malicious IP address. "
+echo " Notify your oaraginstaions's  Incident Reposnse Team IMMEADIATELY. "
+echo " "

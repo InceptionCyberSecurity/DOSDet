@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " "
+echo "  "
 echo " Make sure you have setup your outgoing SMTP mail server as per the instructions on screen. "
 echo " install.sh will install and setup a SMTP server on this local machine. "
 echo " You need to specify your Gmail credentials to allow SMTP traffic."

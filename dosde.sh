@@ -10,19 +10,22 @@ read -p " What email do you want the results to be sent to ? " umail
 # Check server load. If number is high, investigate.
 grep processor /proc/cpuinfo | wc -l > load.txt
 sed -i -e '1iServer Load\' load.txt
+sed -i -e '2i*************************\' load.txt
 
 # Check network load. See a fairly normal incoming and outgoing network load?
 nload > nload.txt
 sed -i -e '1iNetwork Load\' nload.txt
+sed -i -e '2i*************************\' nload.txt
 
 # What IP addresses connected? IP address with a large number of instances over 100?
 netstat -ntu|awk '{print $5}'|cut -d: -f1 -s|sort|uniq -c|sort -nk1 -r > netst.txt
 sed -i -e '1iConnected IPs\' netst.txt
+sed -i -e '2i*************************\' netst.txt
 
 # process txt files
 cat load.txt nload.txt netst.txt | sort > dos.txt
 sed -i -e '1iIs a DOS attack Occuring Right Now?\' dos.txt
-sed -i -e '1i************************************\' dos.txt
+sed -i -e '2i*********************************************************\' dos.txt
 
 # mail
 mail -s "Initial and Quick Malware Report" $umail -a dos.txt

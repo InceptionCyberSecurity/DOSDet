@@ -4,23 +4,23 @@
 
 # Mitigate a DOS attack
 From dosde.sh, identify the IPs attacking you. Block using the following <br/>
-
+<br/>
 **route add "ipaddress" reject** <br/>
 **route -n |grep "ipaddress"  to check if blocked** <br/>
-
+<br/>
 Also you can block an IP address using iptables
-
+<br/>
 **iptables -A INPUT 1 -s IPADDRESS -j DROP/REJECT** <br/>
 **service iptables restart** <br/>
 **service iptables save** <br/>
-
+<br/>
 Now kill all httpd connections and restart httpd services
-
+<br/>
 **killall -KILL httpd** <br/>
 **service httpd startssl** <br/>
-
+<br/>
 Repeat for all malicious IPs.
-
+<br/>
 # TODO
 .txt file Report as HTML
 

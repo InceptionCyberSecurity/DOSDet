@@ -45,5 +45,5 @@ mail -s "Initial and Quick Malware Report" $umail -a dos.txt
 echo " Report sent to $umail. "
 echo " "
 echo " Look at dos.txt carefully and identify the malicious IP address. "
-echo " Notify your oaraginstaions's  Incident Reposnse Team IMMEADIATELY. "
+echo " Notify your organisation's Incident Reposnse Team IMMEADIATELY. "
 echo " "

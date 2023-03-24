@@ -1,5 +1,5 @@
 # DOSDet
- Quick DOS detection for Linux Server. Makes a snapshot so the Report will be indicative, and so aid your early Incident Response. <br/>
+ Quick DOS detection for Linux Server. Makes a snapshot so the Report will be indicative, and aid your early Incident Response. <br/>
  Use cron to run dosde.h regularly. <br/>
 
 # Mitigate a DOS attack

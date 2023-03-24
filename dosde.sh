@@ -6,11 +6,11 @@ echo " Confirm you have setup your outgoing mail server as per the instructions 
 echo " install.sh will install and setup a SMTP server on this local machine. "
 echo " You need to specify your Gmail credentials to allow SMTP traffic, for example."
 echo " "
-echo " RUN THIS netstat COMMAND FIRST TO GET ATTACKING IP ADDRESS .... "
+echo " RUN THIS netstat COMMAND FIRST TO GET ATTACKING IP ADDRESS and look in netst.txt .... "
 echo " netstat -ntu|awk '{print $5}'|cut -d: -f1 -s|sort|uniq -c|sort -nk1 -r > netst.txt "
 echo " "
 read -p " What email do you want the results to be sent to ? " umail
-read -p " What IP address would you like blocked? Enter 0.0.0.0 if no IP address known " ipban
+read -p " Look in netst.txt. What IP address would you like blocked? Enter 0.0.0.0 if no IP address known " ipban
 
 # Check server load. If number is high, investigate.
 grep processor /proc/cpuinfo | wc -l > load.txt

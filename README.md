@@ -3,7 +3,7 @@
  Use cron to run dosde.h regularly. <br/>
 
 # Mitigate a DOS attack
-From dosde.sh, identify the IPs attacking you. Block using the following <br/>
+From dosde.sh, identify the IPs attacking you. Block using the following manual commands <br/>
 <br/>
 **route add "ipaddress" reject** <br/>
 **route -n |grep "ipaddress"  to check if blocked** <br/>

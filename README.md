@@ -8,7 +8,7 @@ From dosde.sh, identify the IPs attacking you. Block using the following manual 
 **route add "ipaddress" reject** <br/>
 **route -n |grep "ipaddress"  to check if blocked** <br/>
 <br/>
-Also you can block an IP address using iptables
+Also, you can block an IP address using iptables
 <br/>
 **iptables -A INPUT 1 -s IPADDRESS -j DROP/REJECT** <br/>
 **service iptables restart** <br/>
